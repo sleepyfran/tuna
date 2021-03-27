@@ -44,13 +44,17 @@ struct InstrumentsView: View {
         .navigationTitle("Instruments")
         .toolbar(content: {
             ToolbarItemGroup(placement: .navigationBarLeading) {
-                EditButton()
+                if !instruments.isEmpty {
+                    EditButton()
+                }
             }
             
             ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button(action: { showingAddSheet = true }) {
-                    Image(systemName: "plus")
-                        .font(Font.system(.title))
+                if editMode != .active {
+                    Button(action: { showingAddSheet = true }) {
+                        Image(systemName: "plus")
+                            .font(Font.system(.title))
+                    }
                 }
             }
         })
