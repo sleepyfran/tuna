@@ -28,6 +28,7 @@ struct InstrumentsView: View {
             }
             .onDelete(perform: onDelete)
         }
+        .listStyle(GroupedListStyle())
         .navigationTitle("Instruments")
         .toolbar(content: {
             ToolbarItemGroup(placement: .navigationBarLeading) {
