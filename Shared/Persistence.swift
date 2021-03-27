@@ -1,10 +1,3 @@
-//
-//  Persistence.swift
-//  Shared
-//
-//  Created by Fran González on 27.03.2021.
-//
-
 import CoreData
 
 struct PersistenceController {
@@ -13,9 +6,18 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for i in 0..<10 {
+            let instrument = Instrument(context: viewContext)
+            instrument.id = UUID()
+            instrument.name = "Instrument \(i)"
+            instrument.strings = 8
+            
+            let tuning = Tuning(context: viewContext)
+            tuning.id = UUID()
+            tuning.name = "Tuning \(i)"
+            tuning.instrument = instrument
+            
+            instrument.tunings = NSOrderedSet(array: [tuning])
         }
         do {
             try viewContext.save()

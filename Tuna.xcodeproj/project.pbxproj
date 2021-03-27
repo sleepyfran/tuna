@@ -11,18 +11,20 @@
 		C91C6B29260FB936000259A9 /* Tuna.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B12260FB935000259A9 /* Tuna.xcdatamodeld */; };
 		C91C6B2A260FB936000259A9 /* TunaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B14260FB935000259A9 /* TunaApp.swift */; };
 		C91C6B2B260FB936000259A9 /* TunaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B14260FB935000259A9 /* TunaApp.swift */; };
-		C91C6B2C260FB936000259A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B15260FB935000259A9 /* ContentView.swift */; };
-		C91C6B2D260FB936000259A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B15260FB935000259A9 /* ContentView.swift */; };
+		C91C6B2C260FB936000259A9 /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B15260FB935000259A9 /* InstrumentsView.swift */; };
+		C91C6B2D260FB936000259A9 /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B15260FB935000259A9 /* InstrumentsView.swift */; };
 		C91C6B2E260FB936000259A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B16260FB935000259A9 /* Persistence.swift */; };
 		C91C6B2F260FB936000259A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6B16260FB935000259A9 /* Persistence.swift */; };
 		C91C6B30260FB936000259A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91C6B17260FB936000259A9 /* Assets.xcassets */; };
 		C91C6B31260FB936000259A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91C6B17260FB936000259A9 /* Assets.xcassets */; };
+		C970FC83260FC97100E18408 /* AddInstrumentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C970FC82260FC97100E18408 /* AddInstrumentSheet.swift */; };
+		C970FC84260FC97100E18408 /* AddInstrumentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C970FC82260FC97100E18408 /* AddInstrumentSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91C6B13260FB935000259A9 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		C91C6B14260FB935000259A9 /* TunaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunaApp.swift; sourceTree = "<group>"; };
-		C91C6B15260FB935000259A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C91C6B15260FB935000259A9 /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
 		C91C6B16260FB935000259A9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C91C6B17260FB936000259A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91C6B1C260FB936000259A9 /* Tuna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuna.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +32,7 @@
 		C91C6B24260FB936000259A9 /* Tuna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91C6B26260FB936000259A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91C6B27260FB936000259A9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C970FC82260FC97100E18408 /* AddInstrumentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInstrumentSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				C91C6B14260FB935000259A9 /* TunaApp.swift */,
-				C91C6B15260FB935000259A9 /* ContentView.swift */,
+				C91C6B15260FB935000259A9 /* InstrumentsView.swift */,
 				C91C6B16260FB935000259A9 /* Persistence.swift */,
 				C91C6B17260FB936000259A9 /* Assets.xcassets */,
 				C91C6B12260FB935000259A9 /* Tuna.xcdatamodeld */,
+				C970FC82260FC97100E18408 /* AddInstrumentSheet.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -195,10 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C970FC83260FC97100E18408 /* AddInstrumentSheet.swift in Sources */,
 				C91C6B28260FB936000259A9 /* Tuna.xcdatamodeld in Sources */,
 				C91C6B2E260FB936000259A9 /* Persistence.swift in Sources */,
 				C91C6B2A260FB936000259A9 /* TunaApp.swift in Sources */,
-				C91C6B2C260FB936000259A9 /* ContentView.swift in Sources */,
+				C91C6B2C260FB936000259A9 /* InstrumentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,10 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C970FC84260FC97100E18408 /* AddInstrumentSheet.swift in Sources */,
 				C91C6B29260FB936000259A9 /* Tuna.xcdatamodeld in Sources */,
 				C91C6B2F260FB936000259A9 /* Persistence.swift in Sources */,
 				C91C6B2B260FB936000259A9 /* TunaApp.swift in Sources */,
-				C91C6B2D260FB936000259A9 /* ContentView.swift in Sources */,
+				C91C6B2D260FB936000259A9 /* InstrumentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.sleepyfran.Tuna;
+				PRODUCT_BUNDLE_IDENTIFIER = io.sleepyfran.tuna;
 				PRODUCT_NAME = Tuna;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -363,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.sleepyfran.Tuna;
+				PRODUCT_BUNDLE_IDENTIFIER = io.sleepyfran.tuna;
 				PRODUCT_NAME = Tuna;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
