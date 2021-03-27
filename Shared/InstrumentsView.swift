@@ -19,7 +19,7 @@ struct InstrumentsView: View {
         try? viewContext.save()
     }
     
-    var body: some View {
+    var InstrumentList: some View {
         List {
             ForEach(instruments, id: \.self) { instrument in
                 NavigationLink(destination: EmptyView()) {
@@ -28,6 +28,18 @@ struct InstrumentsView: View {
             }
             .onDelete(perform: onDelete)
         }
+    }
+    
+    var Empty: some View {
+        Text("No instruments, start by adding some")
+    }
+    
+    var body: some View {
+        (
+            instruments.isEmpty
+                ? AnyView(Empty)
+                : AnyView(InstrumentList)
+        )
         .listStyle(GroupedListStyle())
         .navigationTitle("Instruments")
         .toolbar(content: {

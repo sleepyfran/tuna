@@ -29,6 +29,11 @@ struct PersistenceController {
         }
         return result
     }()
+    
+    static var previewEmpty: PersistenceController = {
+        let result = PersistenceController(inMemory: true)
+        return result
+    }()
 
     let container: NSPersistentContainer
 
